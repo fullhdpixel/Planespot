@@ -12,6 +12,9 @@
 <?php
 error_reporting(0);
 
+session_start();
+session_set_cookie_params(3600 * 24 * 7);
+
 if (isset($_POST['login'])) {
 	$error = array();
 		
